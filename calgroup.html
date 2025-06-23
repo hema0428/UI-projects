@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 2px red;
+            border-style: groove;
+            border-collapse: collapse;
+        }
+       
+        td:nth-child(even),th:nth-child(odd){
+            background-color: hsla(98, 91%, 48%, 0.5);
+        }
+        tr:nth-child(odd){
+            background-color: rgb(199,125,244);
+        }
+        
+        
+    </style>
+</head><!--td:nth-child is used for show like zebra stripes-->
+<body>
+    <table>
+        <!--colgroup is used to style the group of colums like the calender which have the sundays are in diff color-->
+ <colgroup>
+</colgroup>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>no</th>
+        </tr>
+        <tr>
+            <td style="width: 500px;">name</td>
+            <td>age</td>
+            <td>no</td>
+        </tr>
+        
+        <tr>
+            <td style="width: 500px;">name</td>
+            <td>age</td>
+            <td>no</td>
+        </tr>
+         <tr>
+            <td style="width: 500px;">name</td>
+            <td>age</td>
+            <td>no</td>
+        </tr>
+         <tr>
+            <td style="width: 500px;">name</td>
+            <td>age</td>
+            <td>no</td>
+        </tr>
+        <tr>
+            <td style="width: 500px;">name</td>
+            <td>age</td>
+            <td>no</td>
+        </tr>
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        header{
+            background-color: aqua;
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            color:aliceblue;
+        }
+        nav{
+             flex:1;
+            -webkit-flex:1;
+            -ms-flex: 1;
+            background-color: beige;
+            padding: 20px;
+
+        }
+        nav ul{
+            list-style-type: disc;
+            padding: 20px;
+        }
+        article{
+            flex: 3;
+            -webkit-flex:3;
+            -ms-flex: 3;
+            padding:20px;
+            text-align: center;
+            background-color: blanchedalmond;
+            
+            height: 300px;      ``
+        }
+        section {
+            
+            display: flex;
+            display: -webkit-flex;
+        }
+        footer{
+            background-color: cornflowerblue;
+            padding: 20px;
+            text-align: center;
+            color: chartreuse;
+        }
+        @media(max width: 500px){
+            SECTION{
+                flex-direction: column;
+                -webkit-flex-direction: column;
+            }
+        }
+
+
+    </style>
+ </head>
+ <!--first in section display flex is used 
+    webkit-flex is a organization is developing the flex module for html like oracle developing the sql
+    ms flex means microsoft that is as same as show in mobile view-->
+  <body>
+    <h2>Layout</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui autem natus veniam vero illo fuga hic temporibus dolorem voluptatum consequatur, atque veritatis asperiores quas? Dicta tempora inventore tempore eligendi aperiam?</p>
+
+    <header>
+
+        <h2>countries</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">india</a></li>
+                <li><a href="#">US</a></li>
+                <li><a href="#">uk</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>India</h1>
+            <p>i love my country Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio culpa impedit consectetur sed praesentium alias illum officiis eaque aliquam pariatur cumque ducimus explicabo eos ullam, velit atque numquam laborum fuga.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+    <p>footer </p>
+    <address>no.59,A k nagar</address>
+    </footer>
+ </body>
+ </html>
+ 

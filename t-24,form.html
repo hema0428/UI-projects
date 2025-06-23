@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           text-align: center;
+            padding:30px;
+             border: 5px solid red;
+            color: mediumslateblue;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <p>STUDENT FEEDBACK FORM</p>
+    <form auction="form.html" method="post">
+        <label for="text" id="name">NAME : </label><br>
+        <input type="text" id="name" name="name" required  placeholder="Enter your name "><br><br>
+
+        <label for="email">EMAIL : </label><br>
+        <input type="email" id="email" name="email" required placeholder="enter your email"><br><br>
+
+        <label for="course">Course Name</label> <!--dropdown box--><br>
+        <input list="course">
+        <datalist id="course">
+            <option value="html"></option>
+            <option value="css"></option>
+            <option value="javascript"></option>
+            <option value="python"></option>
+            <option value="datascience"></option>
+        </datalist><br><br>
+
+
+        <label for="Rating">Rate the course</label><br><br>
+    <input type="radio" id="rating" name="rating" value="1"><label for="rating">1</label><br><!--- id and label should be same-->
+    <input type="radio" id="rating" name="rating" value="2"><label for="rating">2</label><br>
+    <input type="radio" id="rating" name="rating" value="3"><label for="rating">3</label><br>
+    <input type="radio" id="rating" name="rating" value="4"><label for="rating">4</label><br>
+    <input type="radio" id="rating" name="rating" value="5"><label for="rating">5</label><br><br><br>
+
+    <label for="course"><label for="course">What did you like about the course?</label><br><br>
+    <input type="checkbox" id="" name="vehicle" value="Content"><label for="course">Content</label><br>
+    <input type="checkbox" id="course" name="course" value="Teaching Style"><label for="course">Teaching Style</label><br>
+    <input type="checkbox" id="course" name="course" value="Practice Exercises"><label for="course">Practice Exercises</label><br>
+    <input type="checkbox" id="course" name="course" value="Notes"><label for="course">Notes</label><br>
+    <input type="checkbox" id="course" name="course" value="Projects"><label for="course">Projects</label><br><br>
+
+    <p><label for="suggestion">Suggestion for improvement :</label></p>
+
+<textarea id="suggestion" name="suggestion" rows="4" cols="50"></textarea>
+
+  <br><br>
+
+   <label for="Recommend">Would you recommend this course to others?</label><br>
+    <input type="radio" id="Recommend" name="Recommend" value="Yes"><label for ="Recommend">Yes</label><br><!--- id and label should be same-->
+    <input type="radio" id="Recommend" name="Recommend" value="No"><label for="Recommend">No</label><br><br>
+    
+    <input type="submit" value="submit">
+    <input type="reset">
+
+    </form>
+    </div>
+</body>
+</html>

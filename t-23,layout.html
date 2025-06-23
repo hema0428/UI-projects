@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+             font-size: 25px;
+        }
+
+        header, footer {
+            background-color: pink;
+            padding: 20px;
+            text-align: center;
+            color: azure;
+        }
+        main{
+            display: flex; 
+            display: -webkit-flex;
+            
+        }
+        .box{
+            
+            padding:20px;
+            color:white;
+
+        }
+        .box1{
+             flex:1;
+             -webkit-flex:1;
+            -ms-flex: 1;
+            background-color: darkorchid;
+        }
+        .box2{
+            flex:2;
+            -webkit-flex:2;
+            -ms-flex: 2;
+            background-color:indigo;
+        }
+        .box3{
+            flex:1;
+            -webkit-flex:1;
+            -ms-flex: 1;
+            background-color: deepskyblue;
+        }
+
+        @media(max-width:500px){
+            main{
+                flex-direction: column;
+                -webkit-flex-direction: column;
+            }
+        }
+    </style>
+     <!--if i give padding in main section there will be create the space between the header and footer-->
+</head>
+<body>
+    <header>
+        <h1>Html</h1>
+    </header>
+
+    <main>
+        <div class="box box1">
+            <h2>box 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor velit porro, non doloremque autem dicta laboriosam. Sapiente corporis, tenetur quis ea blanditiis, ipsam est voluptas sit similique itaque atque fuga.</p>
+        </div>
+
+        <div class="box box2">
+            <h2>box2</h2>
+            <p>sednmkosrdsxckkiytrsxdcvbnmloiu</p>
+        </div>
+
+        <div class="box box3">
+            <h2>box3</h2>
+            <p>urtbxsawe987654wstyuiokmnbvcxdrty
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>My webpage footer &copy; 2025</p>
+    </footer>
+</body>
+</html>

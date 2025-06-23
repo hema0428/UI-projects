@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form aution="div.html" method="post"> <!--post,get || form auction must be given when the we gave the submit button-->
+    <label for="text" id="name">Name</label><br>
+    <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br> <!--required kudutha antha text box fill panaama namma adutha ques ku pog amudiyathu   || and placeholder measns it will show the text in the textbox before entered-->
+   
+
+    <label for="fav">choose fav sub</label><br><br>
+    <input type="radio" id="html" name="fav" value="html"><label for="html">html</label><br><!--- id and label should be same-->
+    <input type="radio" id="html" name="fav" value="css"><label for="html">html</label><br>
+    <input type="radio" id="html" name="fav" value="js"><label for="html">html</label><br>
+    <input type="radio" id="html" name="fav" value="bootstrap"><label for="html">html</label><br><br>
+
+    <label for="vehicle">choose fav vehicle</label><br><br>
+    <input type="checkbox" id="vehicle" name="vehicle" value="car"><label for="vehicle">i have a car</label><br>
+    <input type="checkbox" id="vehicle" name="vehicle" value="bike"><label for="vehicle">i have a bike</label><br>
+    <input type="checkbox" id="vehicle" name="vehicle" value="scooty"><label for="vehicle">i have a scooty</label><br><br>
+
+    <label for="cars">choose cars</label>
+    <select name="cars" id="cars"><br>
+        <option value="fiat">fiat</option>
+        <option value="xylo">xylo</option>
+        <option value="renault">renault</option>
+    </select><br><br>
+
+    <label for="bike">choose bike</label> <!--dropdown box-->
+        <input list="bikes">
+        <datalist id="bikes">
+            <option value="ktm"></option>
+            <option value="passion"></option>
+            <option value="shine"></option>
+        </datalist><br><br>
+
+        <input type="submit" value="submit">
+</form>
+</body>
+</html>

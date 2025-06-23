@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        header{
+            background-color: aqua;
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            color:aliceblue;
+        }
+        nav{
+            float:left;
+            width:30%;
+            height:300px;
+            background-color: beige;
+            padding: 20px;
+
+        }
+        nav ul{
+            list-style-type: disc;
+            padding: 20px;
+        }
+        article{
+            float:left;
+            padding:20px;
+            text-align: center;
+            background-color: blanchedalmond;
+            width: 70%;
+            height: 300px;      ``
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear:both
+        }
+        footer{
+            background-color: cornflowerblue;
+            padding: 20px;
+            text-align: center;
+            color: chartreuse;
+        }
+        @media(max width: 500px){
+            nav,article{
+                width: 100%;
+                height:auto;
+
+            }
+        }
+
+
+    </style>
+ </head>
+ <!--* means for entire size-->
+ <!--in nav float is important-->
+ <!--the  sum of width of article and nav is = 100 is must -->
+ <!-- section after  means the after addinng more content in the anyplace of section the webpage  wont change the design-->
+ <!--display table means we created it like a table with rows and columns so it will show as table also added the content-->
+ <!--clear is used  for floating , it will clear the both side means it wont show left and right nav it adjust as for the cotent -->
+ <!--@media means this design also same in  mobile view -->
+ <!--max width is for mobile view-->
+ <!--width 100% means it should appear in full screen-->
+ <!--height will adjustable as for the content-->
+ <!--THE HEIGHT OF ARTICLE AND NAV IS SAME MEANS IT WILL LOOK BETTER -->
+  <body>
+    <h2>Layout</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui autem natus veniam vero illo fuga hic temporibus dolorem voluptatum consequatur, atque veritatis asperiores quas? Dicta tempora inventore tempore eligendi aperiam?</p>
+
+    <header>
+
+        <h2>countries</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">india</a></li>
+                <li><a href="#">US</a></li>
+                <li><a href="#">uk</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>India</h1>
+            <p>i love my country Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio culpa impedit consectetur sed praesentium alias illum officiis eaque aliquam pariatur cumque ducimus explicabo eos ullam, velit atque numquam laborum fuga.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+    <p>footer </p>
+    <address>no.59,A k nagar</address>
+    </footer>
+ </body>
+ </html>
+ 
