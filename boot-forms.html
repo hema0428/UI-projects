@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <form>
+    <form action="div.html" method="post" > <!--  there r two classes using for validation ( was-validated , needs-validation)-->
+    <label for="text" id="name" class="form-label" >Name</label><br><!--class=form-label-->
+    <input type="text" id="name" name="name" class="form-control"  required placeholder="Enter your name"><br><br> <!--class=form-control-->
+   
+
+    <label for="fav" class="form-check-label">choose fav sub</label><br><br>
+    <input  type="radio" id="html" name="fav" value="html" class="form-check-input"><label for="html">html</label><br><!--radio  button ku  class= form-check-label-->
+    <input type="radio" id="html" name="fav" value="css"><label for="html">html</label><br><!--radio  button ku  class= form-check-input-->
+    <input type="radio" id="html" name="fav" value="js"><label for="html">html</label><br>
+    <input type="radio" id="html" name="fav" value="bootstrap"><label for="html">html</label><br><br>
+
+    <p>  note the diiference between html forms and bootstrap forms ></p>
+    <label for="vehicle">choose fav vehicle</label><br><br>
+    <input type="checkbox" id="vehicle" name="vehicle" value="car" class="form-check-input"><label for="vehicle">i have a car</label><br>
+    <input type="checkbox" id="vehicle" name="vehicle" value="bike"><label for="vehicle">i have a bike</label><br>
+    <input type="checkbox" id="vehicle" name="vehicle" value="scooty"><label for="vehicle">i have a scooty</label><br><br>
+
+    <label for="cars">choose cars</label>
+    <select name="cars" id="cars" class="form-select form-select-sm"><br><!--select pandra mathiri ulla thu kulam class= form-select-->
+        <option value="fiat">fiat</option><!--form-select-sm and lg kudukalam -->
+        <!--ipo namaku pakathu pakathula varanum na athuku row,col-sm than use pannanum-->
+        <option value="xylo">xylo</option>
+        <option value="renault">renault</option>
+    </select><br><br>
+
+    <label for="bike">choose bike</label> <!--dropdown box-->
+        <input list="bikes">
+        <datalist id="bikes">
+            <option value="ktm"></option>
+            <option value="passion"></option>
+            <option value="shine"></option>
+        </datalist><br><br>
+
+        <input type="submit" value="submit"><br>
+<p>range</p>
+        <input type="range" main="0" max="100" class="form-range"><!---->
+
+         <p>3. Color:<input type="color" class="form-control-color"></p><!--color select pandrathu-->
+
+
+         <u><p>plain text makes the textbox without box</p></u>
+          <p>19. Text:<input type="text" placeholder="Enter text" class="form-control-plaintext" ></p><br><br><!--plain text nu kudutha box eh varathu textbox ku-->
+
+          <u><p>readonly used for user can only read the text can't insert value</p></u>
+           <p>text1<input type="text" placeholder="Enter text"  readonly ></p>
+
+           <p>toggle switch</p>
+           <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" checked><br>
+
+           </div>
+<p>form floating </p>
+           <div class="form-floating" ><!--the order change AA
+            first input aprm than  --> 
+            <input type="text" placeholder="text" class="form-control"><!--placeholder must-->
+            <label class="form-label">email</label>
+           </div><br>
+
+           <p>input group with checkbox</p>
+           <div class="input-group">
+            <input type="text" class="input-group-text form-control">
+ <input type="checkbox" name="" id="" class="input-group-text">           </div><br>
+
+<p>form-control kudutha full width eduthukum</p>
+ <div class="input-group">
+            <input type="text" class="input-group-text form-control">
+        <span class="input-group-text">@</span></div><br>
+
+<p>without form control</p>
+        <div class="input-group">
+            <input type="text" class="input-group-text ">
+        <span class="input-group-text">@</span></div><br>
+
+        <p>input group with button</p>
+        <div class="input-group">
+            <button type="button" class="input-group-text btn btn-primary">text</button>
+            <span class="input-group-text">#</span>
+
+        </div><br>
+
+        <p>input group with  input dropdown box</p>
+        <div class="input-group">
+        <label for="bike" class="input-group-text">choose bike</label>
+        <!--dropdown box-->
+        <input list="bikes">
+        <datalist id="bikes">
+            <option value="ktm"></option>
+            <option value="passion"></option>
+            <option value="shine"></option>
+        </datalist></div><br><br>
+
+        
+       
+
+   </div>
+
+  </form>  
+</body>
+</html>
